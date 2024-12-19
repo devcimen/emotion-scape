@@ -6,7 +6,7 @@ import React, { useRef, useEffect } from "react";
 import p5 from "p5";
 
 const EmotionAnimation = ({ colors = [], intensity = 1 }) => {
-    
+
     // Ref p5 sketch
     const sketchRef = useRef();
 
@@ -27,7 +27,10 @@ const EmotionAnimation = ({ colors = [], intensity = 1 }) => {
             // p5 draw
             p.draw = () => {
                 p.clear();
-                p.drawingContext.filter = "blur(75px)";
+                
+                // Dynamically adjust blur based on window size
+                const blurValue = window.innerWidth < 768 ? "10px" : "75px"; // Smaller blur for mobile
+                p.drawingContext.filter = `blur(${blurValue})`;
 
                 drawMovingBlobs();
                 t += 0.01; // time increment
