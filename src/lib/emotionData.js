@@ -37,96 +37,111 @@ export const emotions = {
 };
 
 export const combinations = {
-    // Basis-Emotion Combinations
+    // 2er-Kombinationen
     "Angry+Disgusted": "Raging Disgust",
     "Angry+Fearful": "Tense Aggression",
     "Angry+Happy": "Bittersweet Frustration",
     "Angry+Neutral": "Brooding Anger",
     "Angry+Sad": "Resentful Sorrow",
     "Angry+Surprised": "Outraged Shock",
-
     "Disgusted+Fearful": "Repulsed Anxiety",
     "Disgusted+Happy": "Conflicted Happiness",
     "Disgusted+Neutral": "Detached Disgust",
     "Disgusted+Sad": "Loathing Grief",
     "Disgusted+Surprised": "Horrified Amazement",
-
     "Fearful+Happy": "Anxious Optimism",
     "Fearful+Neutral": "Uneasy Calm",
     "Fearful+Sad": "Anxious Regret",
     "Fearful+Surprised": "Startled Fear",
-
-    "Happy+Excited": "Euphoric Energy",
-    "Happy+Joyful": "Radiant Bliss",
     "Happy+Neutral": "Calm Contentment",
     "Happy+Sad": "Reflective Nostalgia",
     "Happy+Surprised": "Delighted Surprise",
+    "Neutral+Sad": "Quiet Melancholy",
+    "Neutral+Surprised": "Subtle Intrigue",
 
-    "Neutral+Reflective": "Quiet Contemplation",
-
-    "Sad+Fearful": "Anxious Regret",
-    "Sad+Heartbroken": "Deep Melancholy",
-    "Sad+Neutral": "Quiet Melancholy",
-    "Sad+Surprised": "Mourning Shock",
-
-    "Surprised+Neutral": "Subtle Intrigue",
-
-    // Multi-Emotion Combinations
-    "Angry+Fearful+Sad": "Overwhelming Tension",
+    // 3er-Kombinationen
+    "Angry+Disgusted+Fearful": "Overwhelming Tension",
+    "Angry+Disgusted+Happy": "Conflicted Outburst",
+    "Angry+Fearful+Neutral": "Tense Calm",
     "Angry+Happy+Neutral": "Conflicted Calm",
-    "Angry+Sad+Surprised": "Disbelieving Sorrow",
+    "Disgusted+Fearful+Sad": "Anxious Loathing",
+    "Disgusted+Happy+Surprised": "Startling Conflict",
     "Fearful+Happy+Sad": "Anxious Hope",
-    "Fearful+Sad+Neutral": "Numb Unease",
-    "Happy+Joyful+Excited": "Boundless Happiness",
-    "Happy+Neutral+Reflective": "Peaceful Serenity",
-    "Sad+Neutral+Reflective": "Quiet Sadness",
-    "Surprised+Fearful+Happy": "Exhilarated Surprise",
+    "Fearful+Neutral+Sad": "Numb Unease",
+    "Happy+Neutral+Sad": "Melancholic Peace",
+    "Happy+Neutral+Surprised": "Curious Serenity",
+    "Neutral+Sad+Surprised": "Bittersweet Shock",
+
+    // 4er-Kombinationen
+    "Angry+Disgusted+Fearful+Sad": "Exhausting Tension",
+    "Angry+Disgusted+Happy+Neutral": "Mixed Conflict",
+    "Angry+Fearful+Neutral+Sad": "Dark Unease",
+    "Disgusted+Fearful+Neutral+Sad": "Heavy Dread",
+    "Fearful+Happy+Neutral+Surprised": "Hopeful Surprise",
+    "Happy+Neutral+Sad+Surprised": "Gentle Reflection",
+
+    // 5er-Kombinationen
+    "Angry+Disgusted+Fearful+Happy+Neutral": "Chaotic Emotion",
+    "Angry+Fearful+Neutral+Sad+Surprised": "Overwhelming Dread",
+    "Disgusted+Fearful+Happy+Neutral+Sad": "Layered Emotion",
+
+    // 6er-Kombinationen
+    "Angry+Disgusted+Fearful+Happy+Neutral+Sad": "Emotional Storm",
+    "Disgusted+Fearful+Happy+Neutral+Sad+Surprised": "Complex Intrigue",
+
+    // 7er-Kombination (alle Hauptemotionen)
+    "Angry+Disgusted+Fearful+Happy+Neutral+Sad+Surprised": "All-Encompassing Emotion"
 };
 
 export const moodMessages = {
-    // Basis-Emotion Moods
-    "Raging Disgust": "Take a step back and allow yourself to process these intense feelings.",
-    "Tense Aggression": "Breathe deeply – focus on releasing this built-up tension.",
-    "Bittersweet Frustration": "Balance the frustration with gratitude for what’s good in life.",
-    "Brooding Anger": "Find a calm space to let go of what’s weighing on you.",
-    "Resentful Sorrow": "It’s okay to feel conflicted. Let yourself heal in your own time.",
-    "Outraged Shock": "Take a moment to steady yourself – clarity will come soon.",
+    // 2er-Kombinationen
+    "Raging Disgust": "Take a breath and step back. Intense emotions need time to settle.",
+    "Tense Aggression": "Tension builds, but strength comes from facing fears calmly.",
+    "Bittersweet Frustration": "Conflicting energy – channel frustration into positive action.",
+    "Brooding Anger": "A quiet storm brews within. Find a moment to release it.",
+    "Resentful Sorrow": "It’s okay to feel conflicted. Healing takes patience.",
+    "Outraged Shock": "Shock amplifies anger – pause before reacting.",
+    "Repulsed Anxiety": "Discomfort and anxiety can be overwhelming. Start small to regain control.",
+    "Conflicted Happiness": "Happiness feels conflicted – focus on what truly brings joy.",
+    "Detached Disgust": "Step away for clarity. Perspective can ease discomfort.",
+    "Loathing Grief": "A heavy heart and strong aversion – give yourself time to recover.",
+    "Horrified Amazement": "Unpleasant surprises can hit hard. Breathe and process slowly.",
+    "Anxious Optimism": "Hope shines through fear. Keep moving toward the light.",
+    "Uneasy Calm": "Unease sits quietly. Find comfort in the small, steady things.",
+    "Anxious Regret": "Worry and sadness weigh heavily – be kind to yourself.",
+    "Startled Fear": "A sudden shock brings anxiety. Ground yourself in the present moment.",
+    "Calm Contentment": "Calm contentment surrounds you. Enjoy the stillness.",
+    "Reflective Nostalgia": "Reflect on bittersweet moments – they shape who you are.",
+    "Delighted Surprise": "Unexpected joy brightens your path. Embrace the surprise.",
+    "Quiet Melancholy": "Gentle sadness sits within. Let yourself rest and recover.",
+    "Subtle Intrigue": "Curiosity stirs quietly. Let it guide you forward.",
 
-    "Repulsed Anxiety": "Focus on your breath. These feelings will pass.",
-    "Conflicted Happiness": "Happiness can be complex – lean into the joy where you can.",
-    "Detached Disgust": "Step away and reframe the situation. You’re in control.",
-    "Loathing Grief": "Let the sadness flow. You’re not alone in this.",
-    "Horrified Amazement": "Shock is temporary – take time to understand what’s happening.",
+    // 3er-Kombinationen
+    "Overwhelming Tension": "Tension runs deep – take small steps to find peace.",
+    "Conflicted Calm": "Conflicting emotions rise – balance will come with time.",
+    "Disbelieving Sorrow": "Shock and sadness collide. Take time to process gently.",
+    "Anxious Hope": "Even through worry, hope lights the way forward.",
+    "Numb Unease": "Quiet unease lingers – seek comfort in small steps.",
+    "Peaceful Serenity": "You’ve found a moment of calm amidst the chaos. Treasure it.",
+    "Quiet Sadness": "Gentle melancholy reminds you of what matters most.",
+    "Exhilarated Surprise": "A sudden burst of joy energizes your spirit – embrace it.",
 
-    "Anxious Optimism": "Hope can exist alongside fear. You’re moving forward.",
-    "Uneasy Calm": "Find a rhythm that brings balance to your uncertainty.",
-    "Anxious Regret": "Reflect on what you can change, and let go of the rest.",
-    "Startled Fear": "It’s okay to feel overwhelmed. Ground yourself in the present moment.",
+    // 4er-Kombinationen
+    "Conflicted Chaos": "A mix of feelings swirls – take time to settle your mind.",
+    "Stormy Reflection": "A deep tension meets quiet contemplation – allow yourself space.",
+    "Unsettled Calm": "You’re balancing heavy emotions. Let the quiet moments ground you.",
+    "Reflective Intensity": "There’s power in pause. Let your emotions guide you carefully.",
 
-    "Euphoric Energy": "Let this excitement drive you forward with purpose.",
-    "Radiant Bliss": "Bask in this moment of pure happiness. You deserve it.",
-    "Calm Contentment": "Savor the quiet and the steady peace you’ve found.",
-    "Reflective Nostalgia": "Hold onto those memories – they’ve shaped who you are.",
-    "Delighted Surprise": "Let the unexpected joy brighten your day.",
+    // 5er-Kombinationen
+    "Turbulent Harmony": "Even amidst a storm, calm moments can be found – hold onto them.",
+    "Layered Tension": "The complexity of emotions is natural. Breathe and allow clarity to emerge.",
+    "Gentle Release": "Let conflicting feelings flow gently through you without resistance.",
 
-    "Quiet Contemplation": "Give yourself space to think deeply and recharge.",
+    // 6er-Kombination
+    "Emotional Overload": "Everything feels alive at once. Find stillness within the chaos.",
 
-    "Deep Melancholy": "This sadness is heavy, but it won’t last forever.",
-    "Quiet Melancholy": "Allow yourself to rest in this gentle sadness.",
-    "Mourning Shock": "Grieve at your own pace – healing takes time.",
-
-    "Subtle Intrigue": "Curiosity can lead you to unexpected places – embrace it.",
-
-    // Multi-Emotion Moods
-    "Overwhelming Tension": "There’s a lot to feel right now. Take things one step at a time.",
-    "Conflicted Calm": "It’s okay to feel torn – focus on what brings you peace.",
-    "Disbelieving Sorrow": "Sometimes reality is hard to accept. Let yourself process slowly.",
-    "Anxious Hope": "Even through worry, there’s a light of hope guiding you.",
-    "Numb Unease": "You might feel stuck, but small steps will move you forward.",
-    "Boundless Happiness": "This joy knows no bounds – celebrate it fully!",
-    "Peaceful Serenity": "You’ve found a moment of stillness – treasure it.",
-    "Quiet Sadness": "Gentle reflection can bring a path toward healing.",
-    "Exhilarated Surprise": "Embrace the unexpected joy and let it energize you.",
+    // 7er-Kombination (Alle Emotionen)
+    "Boundless Emotion": "Every part of you is alive – let this wave settle into quiet clarity."
 };
 
 export const emotionColors = {
