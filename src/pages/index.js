@@ -43,7 +43,7 @@ const Index = () => {
         if (combinations[sortedTags]) {
             setMood(combinations[sortedTags]);
         } else {
-            setMood("");
+            setMood('Feeling your emotions...');
         }
     };
 
@@ -102,14 +102,16 @@ const Index = () => {
             {/* Mood */}
             {mood && (
                 <motion.div
-                    className='absolute bottom-24 left-20 w-96 h-24 flex items-center justify-center'
+                    className='absolute bottom-24 left-20 w-96 h-24 flex items-center'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeOut' }}
                 >
-                    <h2 className='text-2xl text-gray-800'>{mood}</h2>
-
-                    <div className='absolute -z-10 w-96 h-24 bg-blue-50 rounded-full blur-md'></div>
+                    <div className='relative z-10 flex flex-col gap-2'>
+                        <h2 className='text-xl text-gray-800'>{mood}</h2>
+                        <p className='text-sm text-gray-600'>{moodMessages[mood]}</p>
+                    </div>
+                    {/* <div className='absolute -z-10 w-max h-32 bg-blue-50 rounded-full blur-xl'></div> */}
                 </motion.div>
             )}
         </div>
