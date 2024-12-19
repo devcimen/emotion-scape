@@ -37,13 +37,13 @@ export const emotions = {
 };
 
 export const combinations = {
-    // Basis-Emotion Combinations (Alphabetically Sorted Keys)
+    // Basis-Emotion Combinations
+    "Angry+Disgusted": "Raging Disgust",
     "Angry+Fearful": "Tense Aggression",
     "Angry+Happy": "Bittersweet Frustration",
     "Angry+Neutral": "Brooding Anger",
     "Angry+Sad": "Resentful Sorrow",
     "Angry+Surprised": "Outraged Shock",
-    "Angry+Disgusted": "Raging Disgust",
 
     "Disgusted+Fearful": "Repulsed Anxiety",
     "Disgusted+Happy": "Conflicted Happiness",
@@ -56,8 +56,8 @@ export const combinations = {
     "Fearful+Sad": "Anxious Regret",
     "Fearful+Surprised": "Startled Fear",
 
-    "Happy+Joyful": "Radiant Bliss",
     "Happy+Excited": "Euphoric Energy",
+    "Happy+Joyful": "Radiant Bliss",
     "Happy+Neutral": "Calm Contentment",
     "Happy+Sad": "Reflective Nostalgia",
     "Happy+Surprised": "Delighted Surprise",
@@ -70,15 +70,63 @@ export const combinations = {
     "Sad+Surprised": "Mourning Shock",
 
     "Surprised+Neutral": "Subtle Intrigue",
+
+    // Multi-Emotion Combinations
+    "Angry+Fearful+Sad": "Overwhelming Tension",
+    "Angry+Happy+Neutral": "Conflicted Calm",
+    "Angry+Sad+Surprised": "Disbelieving Sorrow",
+    "Fearful+Happy+Sad": "Anxious Hope",
+    "Fearful+Sad+Neutral": "Numb Unease",
+    "Happy+Joyful+Excited": "Boundless Happiness",
+    "Happy+Neutral+Reflective": "Peaceful Serenity",
+    "Sad+Neutral+Reflective": "Quiet Sadness",
+    "Surprised+Fearful+Happy": "Exhilarated Surprise",
 };
 
 export const moodMessages = {
-    "Reflective Nostalgia": "Take a moment to cherish the good memories.",
-    "Bittersweet Frustration": "Channel your frustration into something constructive.",
-    "Euphoric Energy": "You’re unstoppable – ride the wave of excitement!",
-    "Deep Melancholy": "It’s okay to feel this way. Be kind to yourself.",
-    "Paralyzing Anxiety": "Breathe. You’re stronger than you feel right now.",
-    "Quiet Contemplation": "Embrace the stillness and let your thoughts settle.",
+    // Basis-Emotion Moods
+    "Raging Disgust": "Take a step back and allow yourself to process these intense feelings.",
+    "Tense Aggression": "Breathe deeply – focus on releasing this built-up tension.",
+    "Bittersweet Frustration": "Balance the frustration with gratitude for what’s good in life.",
+    "Brooding Anger": "Find a calm space to let go of what’s weighing on you.",
+    "Resentful Sorrow": "It’s okay to feel conflicted. Let yourself heal in your own time.",
+    "Outraged Shock": "Take a moment to steady yourself – clarity will come soon.",
+
+    "Repulsed Anxiety": "Focus on your breath. These feelings will pass.",
+    "Conflicted Happiness": "Happiness can be complex – lean into the joy where you can.",
+    "Detached Disgust": "Step away and reframe the situation. You’re in control.",
+    "Loathing Grief": "Let the sadness flow. You’re not alone in this.",
+    "Horrified Amazement": "Shock is temporary – take time to understand what’s happening.",
+
+    "Anxious Optimism": "Hope can exist alongside fear. You’re moving forward.",
+    "Uneasy Calm": "Find a rhythm that brings balance to your uncertainty.",
+    "Anxious Regret": "Reflect on what you can change, and let go of the rest.",
+    "Startled Fear": "It’s okay to feel overwhelmed. Ground yourself in the present moment.",
+
+    "Euphoric Energy": "Let this excitement drive you forward with purpose.",
+    "Radiant Bliss": "Bask in this moment of pure happiness. You deserve it.",
+    "Calm Contentment": "Savor the quiet and the steady peace you’ve found.",
+    "Reflective Nostalgia": "Hold onto those memories – they’ve shaped who you are.",
+    "Delighted Surprise": "Let the unexpected joy brighten your day.",
+
+    "Quiet Contemplation": "Give yourself space to think deeply and recharge.",
+
+    "Deep Melancholy": "This sadness is heavy, but it won’t last forever.",
+    "Quiet Melancholy": "Allow yourself to rest in this gentle sadness.",
+    "Mourning Shock": "Grieve at your own pace – healing takes time.",
+
+    "Subtle Intrigue": "Curiosity can lead you to unexpected places – embrace it.",
+
+    // Multi-Emotion Moods
+    "Overwhelming Tension": "There’s a lot to feel right now. Take things one step at a time.",
+    "Conflicted Calm": "It’s okay to feel torn – focus on what brings you peace.",
+    "Disbelieving Sorrow": "Sometimes reality is hard to accept. Let yourself process slowly.",
+    "Anxious Hope": "Even through worry, there’s a light of hope guiding you.",
+    "Numb Unease": "You might feel stuck, but small steps will move you forward.",
+    "Boundless Happiness": "This joy knows no bounds – celebrate it fully!",
+    "Peaceful Serenity": "You’ve found a moment of stillness – treasure it.",
+    "Quiet Sadness": "Gentle reflection can bring a path toward healing.",
+    "Exhilarated Surprise": "Embrace the unexpected joy and let it energize you.",
 };
 
 export const emotionColors = {
