@@ -36,17 +36,19 @@ const Index = () => {
 
     // emotion combination checker
     const checkCombination = (tags) => {
-        // Normalize and sort tags alphabetically
-        const sortedTags = [...new Set(tags)].sort().join("+");
+        // filter main emotions
+        const mainEmotions = tags.filter(tag => Object.keys(emotions).includes(tag));
 
-        // Lookup in combinations
+        // normalize and sort main emotions alphabetically
+        const sortedTags = [...new Set(mainEmotions)].sort().join("+");
+
+        // lookup in combinations
         if (combinations[sortedTags]) {
             setMood(combinations[sortedTags]);
         } else {
             setMood('Feeling your emotions...');
         }
     };
-
 
     // generate animation colors based on selected emotions
     const getAnimationColors = () => {
