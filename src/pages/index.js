@@ -94,8 +94,8 @@ const Index = () => {
                 emotionType={selectedEmotion[0] || "default"}
             />
 
-            <div className='relative z-10 ml-20 mt-24 w-96 flex flex-col gap-10'>
-                <h1 className='text-5xl text-gray-800'>How are you feeling today?</h1>
+            <div className='relative z-10 mx-6 mt-10 md:ml-20 md:mt-24 md:w-96 flex flex-col gap-6 sm:gap-10'>
+                <h1 className='text-5xl md:text-5xl text-gray-800'>How are you feeling today?</h1>
 
                 {/* Emotions */}
                 <div className='flex flex-wrap gap-2'>{renderTags()}</div>
@@ -104,7 +104,7 @@ const Index = () => {
             {/* Mood */}
             {mood && (
                 <motion.div
-                    className='absolute bottom-24 left-20 w-96 h-24 flex items-center'
+                    className='absolute bottom-10 left-6 md:bottom-24 md:left-20 w-11/12 md:w-96 h-20 flex items-center'
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1, ease: 'easeOut' }}
