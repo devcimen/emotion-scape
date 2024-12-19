@@ -121,7 +121,7 @@ const Index = () => {
                         ) : (
                             <h2 className='text-xl text-gray-800'>{mood}</h2>
                         )}
-                        <p className='text-sm text-gray-600'>{moodMessages[mood]}</p>
+                        <p className='text-sm text-gray-600 mr-6'>{moodMessages[mood]}</p>
                     </div>
                     {/* <div className='absolute -z-10 w-max h-32 bg-blue-50 rounded-full blur-xl'></div> */}
                 </motion.div>
