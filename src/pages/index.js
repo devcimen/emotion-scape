@@ -46,7 +46,7 @@ const Index = () => {
         if (combinations[sortedTags]) {
             setMood(combinations[sortedTags]);
         } else {
-            setMood('Feeling your emotions...');
+            setMood('Embracing your emotions...');
         }
     };
 
@@ -110,7 +110,17 @@ const Index = () => {
                     transition={{ duration: 1, ease: 'easeOut' }}
                 >
                     <div className='relative z-10 flex flex-col gap-2'>
-                        <h2 className='text-xl text-gray-800'>{mood}</h2>
+                        {mood == 'Embracing your emotions...' ? (
+                            <motion.h2
+                                className='text-xl text-gray-800'
+                                animate={{ opacity: [0.4, 1, 0.4]}}
+                                transition={{ duration: 4, repeat: Infinity }}
+                            >
+                                Embracing your emotions...
+                            </motion.h2>
+                        ) : (
+                            <h2 className='text-xl text-gray-800'>{mood}</h2>
+                        )}
                         <p className='text-sm text-gray-600'>{moodMessages[mood]}</p>
                     </div>
                     {/* <div className='absolute -z-10 w-max h-32 bg-blue-50 rounded-full blur-xl'></div> */}
